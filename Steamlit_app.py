@@ -66,7 +66,7 @@ streamlit.dataframe(my_data_rows)
 #new selectionto response fruityvice api response
 #streamlit.header("Fruityvice Fruit Advice!")
 #allow end user to add a fruit tothe list
-def insert_row _snowflake(new_fruit):
+def insert_row_snowflake(new_fruit):
         with my_cnx.cusor() as my cur:
                 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
                 return "Thanks for adding " + new_fruit
