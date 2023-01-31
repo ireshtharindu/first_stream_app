@@ -67,7 +67,7 @@ streamlit.dataframe(my_data_rows)
 #streamlit.header("Fruityvice Fruit Advice!")
 #allow end user to add a fruit tothe list
 def insert_row_snowflake(new_fruit):
-        with my_cnx.cusor() as my cur:
+        with my_cnx.cusor() as my_cur:
                 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
                 return "Thanks for adding " + new_fruit
         
