@@ -60,7 +60,7 @@ except URLError as e:
 #my_cur.execute("SELECT * FROM fruit_load_list")
 #my_data_rows = my_cur.fetchall()
 
-streamlit.dataframe(my_data_rows)
+#streamlit.dataframe(my_data_rows)
 
 
 streamlit.header("The fruit load list contains:")
